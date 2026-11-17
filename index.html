@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanksgiving Survival Guide — Free 5-Minute Chef's Rescue PDF</title>
+    <meta
+      name="description"
+      content="Download the Exclusive Chef's 5-Minute Cheat Sheet & Thanksgiving Rescue Guide ($15.00 Value) 100% free today."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --burnt-orange: #d9534f;
+        --burnt-orange-hover: #e85d4a;
+        --burnt-orange-deep: #b83227;
+        --rustic-brown: #8b4513;
+        --deep-red: #8e1b1b;
+        --gold: #f5b041;
+        --gold-bright: #ffd580;
+        --green: #2ecc71;
+        --green-btn: #27ae60;
+        --bg-dark: #160a04;
+        --text-cream: #fff8f0;
+        --text-warm: #e8d8c8;
+        --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        --font-body: 'Lora', Georgia, Cambria, serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        background-color: var(--bg-dark);
+        color: var(--text-cream);
+        font-family: var(--font-body);
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6;
+        overflow-x: hidden;
+        position: relative;
+      }
+
+      h1,
+      h2,
+      h3,
+      button,
+      .font-heading {
+        font-family: var(--font-heading);
+      }
+
+      /* Background Feast Image & Dark Warm Overlay */
+      .bg-layer {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        overflow: hidden;
+        background: radial-gradient(circle at top, #3b1708 0%, #160a04 100%);
+      }
+
+      .bg-layer img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.06);
+        filter: blur(7px) brightness(0.38) saturate(1.1);
+      }
+
+      .bg-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background: radial-gradient(circle at center, rgba(56, 23, 9, 0.52) 0%, rgba(18, 7, 3, 0.92) 100%);
+      }
+
+      /* 1. Sticky Top Alert Bar */
+      .alert-bar {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        background: linear-gradient(90deg, #7f1d1d 0%, #b71c1c 50%, #7f1d1d 100%);
+        border-bottom: 1px solid rgba(251, 191, 36, 0.35);
+        color: #ffffff;
+        padding: 10px 16px;
+        text-align: center;
+        font-family: var(--font-heading);
+        font-size: 0.85rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+      }
+
+      .alert-copies {
+        color: #fde68a;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Main Wrapper */
+      .main-content {
+        flex: 1;
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 28px 16px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      /* Card Base */
+      .panel {
+        border-radius: 18px;
+        border: 1px solid rgba(252, 211, 77, 0.18);
+        background: linear-gradient(135deg, rgba(43, 20, 9, 0.96) 0%, rgba(30, 13, 5, 0.97) 55%, rgba(22, 9, 3, 0.98) 100%);
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.72);
+        padding: 26px 20px;
+      }
+
+      /* Fade-In Animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(18px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      /* 2. Hero Split Layout */
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        align-items: center;
+      }
+
+      /* Book Cover Area */
+      .book-stage {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 0;
+      }
+
+      .book-glow {
+        position: absolute;
+        width: 82%;
+        height: 82%;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(217, 83, 79, 0.3) 0%, rgba(139, 69, 19, 0.15) 55%, transparent 75%);
+        filter: blur(26px);
+        pointer-events: none;
+      }
+
+      .book-wrapper {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .book-cover {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid rgba(253, 230, 138, 0.22);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .shadow-xl {
+        box-shadow: 0 22px 45px rgba(0, 0, 0, 0.68), 0 0 0 1px rgba(245, 176, 65, 0.15);
+      }
+
+      .book-wrapper:hover .book-cover,
+      .book-wrapper:hover .book-fallback {
+        transform: translateY(-8px) rotate(-1.5deg) scale(1.02);
+        box-shadow: 0 30px 55px rgba(0, 0, 0, 0.78), 0 0 28px rgba(245, 176, 65, 0.22);
+      }
+
+      .book-fallback {
+        display: none;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        border-radius: 12px;
+        border: 1px solid rgba(251, 191, 36, 0.32);
+        background: linear-gradient(180deg, #5c2412 0%, #3a160b 55%, #230c05 100%);
+        padding: 24px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+      }
+
+      .book-fallback-tag {
+        font-family: var(--font-heading);
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: rgba(253, 230, 138, 0.8);
+      }
+
+      .book-fallback-title {
+        margin-top: 10px;
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        font-weight: 800;
+        line-height: 1.2;
+        color: #fffbeb;
+      }
+
+      .book-fallback-sub {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        font-style: italic;
+        color: rgba(254, 243, 199, 0.85);
+      }
+
+      /* Copy & CTA Area */
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .rating-row {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        margin-bottom: 12px;
+        font-family: var(--font-heading);
+        font-size: 0.92rem;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      .rating-reviews {
+        color: rgba(254, 243, 199, 0.92);
+      }
+
+      .hero-headline {
+        font-size: clamp(1.85rem, 3.6vw, 2.7rem);
+        font-weight: 800;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+        text-wrap: balance;
+      }
+
+      .hero-subheadline {
+        margin-top: 16px;
+        max-width: 54ch;
+        font-size: 1.05rem;
+        line-height: 1.65;
+        color: var(--text-warm);
+      }
+
+      .hero-subheadline del {
+        color: #f08a86;
+        font-weight: 600;
+        text-decoration-thickness: 2px;
+      }
+
+      .highlight-free {
+        font-family: var(--font-heading);
+        font-weight: 800;
+        color: var(--gold-bright);
+        text-decoration: underline;
+        text-decoration-color: var(--burnt-orange);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+      }
+
+      .benefits-list {
+        list-style: none;
+        width: 100%;
+        max-width: 520px;
+        margin-top: 22px;
+        padding: 18px 0;
+        border-top: 1px solid rgba(253, 230, 138, 0.14);
+        border-bottom: 1px solid rgba(253, 230, 138, 0.14);
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        text-align: left;
+      }
+
+      .benefits-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 11px;
+        font-size: 0.98rem;
+        color: var(--text-cream);
+      }
+
+      .check-icon {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        color: var(--green);
+      }
+
+      /* Pulsing CTA Button */
+      .cta-wrap {
+        width: 100%;
+        max-width: 440px;
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .cta-btn-box {
+        position: relative;
+        width: 100%;
+      }
+
+      @keyframes ctaPulseRing {
+        0%,
+        100% {
+          opacity: 0.72;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0;
+          transform: scale(1.045, 1.18);
+        }
+      }
+
+      .cta-pulse-ring {
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        background: linear-gradient(90deg, rgba(245, 176, 65, 0.58), rgba(217, 83, 79, 0.58), rgba(245, 176, 65, 0.58));
+        filter: blur(2px);
+        pointer-events: none;
+        animation: ctaPulseRing 2.1s infinite cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .cta-btn {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        min-height: 60px;
+        border: none;
+        border-bottom: 4px solid #7c1d16;
+        border-radius: 12px;
+        background: linear-gradient(90deg, var(--burnt-orange-hover) 0%, var(--burnt-orange) 50%, var(--burnt-orange-deep) 100%);
+        color: #ffffff;
+        padding: 16px 24px;
+        font-size: 1.05rem;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 0 10px 28px rgba(217, 83, 79, 0.5);
+        transition: filter 0.15s ease, transform 0.15s ease;
+      }
+
+      .cta-btn:hover {
+        filter: brightness(1.1);
+      }
+
+      .cta-btn:active {
+        transform: translateY(2px);
+      }
+
+      .trust-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: var(--font-heading);
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #cbb8a6;
+      }
+
+      .trust-badge svg {
+        width: 14px;
+        height: 14px;
+        color: var(--gold);
+      }
+
+      /* Timeline Preview Section */
+      .section-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 18px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(253, 230, 138, 0.12);
+      }
+
+      .eyebrow {
+        font-family: var(--font-heading);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .section-title {
+        margin-top: 4px;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+
+      .section-desc {
+        margin-top: 6px;
+        max-width: 48ch;
+        font-size: 0.95rem;
+        color: var(--text-warm);
+      }
+
+      .tablist {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 4px;
+        border-radius: 12px;
+        border: 1px solid rgba(252, 211, 77, 0.18);
+        background: rgba(18, 7, 3, 0.95);
+        align-self: flex-start;
+      }
+
+      .tab-btn {
+        min-height: 40px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 8px;
+        background: transparent;
+        color: rgba(232, 216, 200, 0.8);
+        font-size: 0.78rem;
+        font-weight: 700;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: background-color 0.15s ease, color 0.15s ease;
+      }
+
+      .tab-btn:hover {
+        background: rgba(139, 69, 19, 0.35);
+        color: #ffffff;
+      }
+
+      .tab-btn.active {
+        background: var(--burnt-orange);
+        color: #ffffff;
+      }
+
+      .cards-grid {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .sub-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 14px;
+        border: 1px solid rgba(253, 230, 138, 0.14);
+        background: rgba(40, 18, 8, 0.78);
+        padding: 20px;
+      }
+
+      .time-tag {
+        font-family: var(--font-heading);
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: var(--gold);
+      }
+
+      .sub-card h3 {
+        margin-top: 6px;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.35;
+        color: #ffffff;
+      }
+
+      .sub-card p.tip {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: rgba(232, 216, 200, 0.9);
+      }
+
+      /* Reviews Section */
+      .review-outcome {
+        margin-top: 10px;
+        font-family: var(--font-heading);
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--gold-bright);
+      }
+
+      .review-quote {
+        margin-top: 8px;
+        font-size: 0.92rem;
+        color: rgba(255, 248, 240, 0.92);
+      }
+
+      .review-author {
+        margin-top: 16px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(253, 230, 138, 0.12);
+        font-family: var(--font-heading);
+        font-size: 0.78rem;
+      }
+
+      .review-author strong {
+        display: block;
+        color: #ffffff;
+      }
+
+      .review-author span {
+        color: rgba(232, 216, 200, 0.75);
+      }
+
+      /* Footer */
+      .site-footer {
+        border-top: 1px solid rgba(253, 230, 138, 0.12);
+        background: rgba(18, 7, 3, 0.88);
+        padding: 18px 16px;
+        text-align: center;
+        font-family: var(--font-heading);
+        font-size: 0.78rem;
+        color: rgba(232, 216, 200, 0.65);
+      }
+
+      /* Offer Verification Content Locker Modal */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.78);
+        backdrop-filter: blur(4px);
+      }
+
+      .modal-backdrop.open {
+        display: flex;
+      }
+
+      .modal-card {
+        position: relative;
+        width: 100%;
+        max-width: 440px;
+        border-radius: 18px;
+        border: 1px solid rgba(252, 211, 77, 0.28);
+        background: linear-gradient(180deg, #2a1308 0%, #170903 100%);
+        padding: 28px 24px;
+        color: var(--text-cream);
+        box-shadow: 0 28px 65px rgba(0, 0, 0, 0.85);
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid rgba(253, 230, 138, 0.18);
+        background: rgba(0, 0, 0, 0.3);
+        color: rgba(254, 243, 199, 0.85);
+        font-size: 1.25rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+
+      .modal-close:hover {
+        background: rgba(0, 0, 0, 0.55);
+        color: #ffffff;
+      }
+
+      .modal-eyebrow {
+        font-family: var(--font-heading);
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--gold);
+      }
+
+      .modal-title {
+        margin-top: 8px;
+        padding-right: 34px;
+        font-size: 1.35rem;
+        font-weight: 800;
+        line-height: 1.25;
+        color: #ffffff;
+      }
+
+      .modal-desc {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: var(--text-warm);
+      }
+
+      .offer-list {
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .offer-btn {
+        width: 100%;
+        min-height: 60px;
+        padding: 13px 15px;
+        border-radius: 12px;
+        border: 1px solid rgba(252, 211, 77, 0.28);
+        background: rgba(139, 69, 19, 0.28);
+        color: #ffffff;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        transition: border-color 0.15s ease, background-color 0.15s ease;
+      }
+
+      .offer-btn:hover {
+        border-color: var(--gold);
+        background: rgba(139, 69, 19, 0.48);
+      }
+
+      .offer-title {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .offer-sub {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.76rem;
+        font-weight: 600;
+        color: rgba(232, 216, 200, 0.8);
+      }
+
+      .offer-pill {
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: var(--burnt-orange);
+        padding: 6px 12px;
+        font-size: 0.76rem;
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .modal-state {
+        display: none;
+        text-align: center;
+        padding: 16px 0 4px;
+      }
+
+      .modal-state.active {
+        display: block;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        border-radius: 999px;
+        border: 3px solid rgba(245, 176, 65, 0.25);
+        border-top-color: var(--gold);
+        animation: spin 0.85s linear infinite;
+      }
+
+      .download-btn {
+        margin-top: 20px;
+        width: 100%;
+        min-height: 54px;
+        border: none;
+        border-bottom: 4px solid #1b6e3e;
+        border-radius: 12px;
+        background: var(--green-btn);
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 800;
+        cursor: pointer;
+      }
+
+      .download-btn:hover {
+        background: var(--green);
+      }
+
+      /* Desktop Breakpoints */
+      @media (min-width: 640px) {
+        .alert-bar {
+          font-size: 0.92rem;
+        }
+        .main-content {
+          padding: 36px 24px 56px;
+          gap: 38px;
+        }
+        .panel {
+          padding: 36px 34px;
+        }
+        .book-wrapper {
+          max-width: 310px;
+        }
+        .tablist {
+          flex-wrap: nowrap;
+        }
+      }
+
+      @media (min-width: 960px) {
+        .panel {
+          padding: 46px 48px;
+        }
+        .hero-grid {
+          grid-template-columns: 0.86fr 1.14fr;
+          gap: 48px;
+        }
+        .book-wrapper {
+          max-width: 340px;
+        }
+        .hero-copy {
+          align-items: flex-start;
+          text-align: left;
+        }
+        .rating-row {
+          justify-content: flex-start;
+        }
+        .benefits-list {
+          max-width: none;
+        }
+        .cta-wrap {
+          align-items: flex-start;
+        }
+        .section-header {
+          flex-direction: row;
+          align-items: flex-end;
+        }
+        .cards-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .fade-in,
+        .cta-pulse-ring {
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Blurred Cozy Feast Background -->
+    <div class="bg-layer" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1606728062981-a44927bc5ac7?auto=format&fit=crop&w=1600&q=80"
+        alt=""
+        onerror="this.style.display='none'"
+      />
+    </div>
+    <div class="bg-overlay" aria-hidden="true"></div>
+
+    <!-- 1. Top Alert Bar -->
+    <header class="alert-bar" role="banner">
+      ⚠️ HIGH DEMAND: Only <span id="copiesLeftHeader" class="alert-copies">14</span> Free Copies Left Today!
+    </header>
+
+    <main class="main-content">
+      <!-- 2. Hero Section -->
+      <section class="panel fade-in" aria-label="Free Thanksgiving Cookbook Offer">
+        <div class="hero-grid">
+          <!-- Book Cover Image (Place cover.png next to index.html) -->
+          <div class="book-stage">
+            <div class="book-glow" aria-hidden="true"></div>
+            <div class="book-wrapper">
+              <img
+                id="bookCoverImg"
+                src="cover.png"
+                alt="Thanksgiving Survival Guide"
+                class="book-cover shadow-xl"
+                onerror="this.style.display='none'; document.getElementById('bookFallback').style.display='flex';"
+              />
+              <div id="bookFallback" class="book-fallback shadow-xl">
+                <span class="book-fallback-tag">Deluxe Digital Edition</span>
+                <p class="book-fallback-title">Thanksgiving Survival Guide</p>
+                <p class="book-fallback-sub">5-Minute Cheat Sheet &amp; Rescue Guide</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Offer Copy & CTA -->
+          <div class="hero-copy">
+            <div class="rating-row">
+              <span>⭐⭐⭐⭐⭐ 4.9/5</span>
+              <span class="rating-reviews">(Over 850 Happy Cooks)</span>
+            </div>
+
+            <h1 class="hero-headline">🚨 DON'T PANIC: Save Your Thanksgiving Dinner!</h1>
+
+            <p class="hero-subheadline">
+              Download the Exclusive Chef's 5-Minute Cheat Sheet &amp; Rescue Guide (
+              <del>$15.00</del> Value) for <span class="highlight-free">100% FREE</span> Today.
+            </p>
+
+            <ul class="benefits-list">
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span>The 5-Minute Turkey Rescue Method (No More Dry Meat!)</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span>3 Instant Side Dishes to Save the Day.</span>
+              </li>
+              <li>
+                <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <span>The Emergency Thanksgiving Cooking Timeline.</span>
+              </li>
+            </ul>
+
+            <div class="cta-wrap">
+              <div class="cta-btn-box">
+                <span class="cta-pulse-ring" aria-hidden="true"></span>
+                <button type="button" id="mainCtaBtn" class="cta-btn" onclick="openContentLocker()">
+                  <span>📥 Unlock &amp; Download PDF Now</span>
+                </button>
+              </div>
+              <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>100% Secure &amp; Safe Download</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Interactive Timeline Preview -->
+      <section class="panel" aria-labelledby="timeline-heading">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Inside Chapter 03 · Preview</p>
+            <h2 id="timeline-heading" class="section-title">The Stress-Free Cooking Timeline</h2>
+            <p id="timelineSummary" class="section-desc">
+              Eliminate 70% of kitchen stress before Thanksgiving morning even begins.
+            </p>
+          </div>
+          <div class="tablist" role="tablist" aria-label="Cooking timeline phases">
+            <button type="button" class="tab-btn active" role="tab" aria-selected="true" onclick="selectPhase('day-before', this)">
+              Day Before Prep
+            </button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" onclick="selectPhase('morning', this)">
+              Thanksgiving Morning
+            </button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" onclick="selectPhase('final-stretch', this)">
+              Final 2 Hours
+            </button>
+          </div>
+        </div>
+
+        <div id="timelineCards" class="cards-grid"></div>
+      </section>
+
+      <!-- 4. Reader Reviews -->
+      <section class="panel" aria-labelledby="reviews-heading">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Verified Home Cooks</p>
+            <h2 id="reviews-heading" class="section-title">How Readers Saved Dinner</h2>
+          </div>
+          <p class="font-heading" style="font-size: 0.78rem; font-weight: 700; color: rgba(232,216,200,0.75);">
+            4.9/5 average · Over 850 happy cooks
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="sub-card">
+            <div>
+              <div style="font-size: 0.85rem;">⭐⭐⭐⭐⭐</div>
+              <p class="review-outcome">Served dinner 10 minutes ahead of schedule</p>
+              <blockquote class="review-quote">
+                “Used the dry-brine method and the oven swap chart after panicking the night before. Every breast slice was juicy and nothing went cold.”
+              </blockquote>
+            </div>
+            <footer class="review-author">
+              <strong>Hannah Gallagher</strong>
+              <span>Austin, TX · First-time host for 14 guests</span>
+            </footer>
+          </article>
+
+          <article class="sub-card">
+            <div>
+              <div style="font-size: 0.85rem;">⭐⭐⭐⭐⭐</div>
+              <p class="review-outcome">Saved 3 side dishes with a single-oven kitchen</p>
+              <blockquote class="review-quote">
+                “The last-minute side dish swaps and 45-minute turkey rest window solved my tiny apartment oven bottleneck completely.”
+              </blockquote>
+            </div>
+            <footer class="review-author">
+              <strong>Devon Morales</strong>
+              <span>Chicago, IL · Home cook</span>
+            </footer>
+          </article>
+
+          <article class="sub-card">
+            <div>
+              <div style="font-size: 0.85rem;">⭐⭐⭐⭐⭐</div>
+              <p class="review-outcome">Zero dry leftovers across an 18 lb bird</p>
+              <blockquote class="review-quote">
+                “Pulling the roast at 160°F instead of waiting for the pop-up timer changed Thanksgiving in our house for good.”
+              </blockquote>
+            </div>
+            <footer class="review-author">
+              <strong>Claire Lindqvist</strong>
+              <span>Portland, OR · Family gathering host</span>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      &copy; 2026 Thanksgiving Survival Guide · Instant Digital PDF Edition
+    </footer>
+
+    <!-- Simple Offer-Completion Content Locker Modal -->
+    <div id="lockerModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-card">
+        <button type="button" class="modal-close" aria-label="Close modal" onclick="closeLockerModal()">&times;</button>
+
+        <!-- Step 1: Offer Selection -->
+        <div id="stateOffers" class="modal-state active" style="text-align: left; padding-top: 0;">
+          <p class="modal-eyebrow">🔒 Offer Verification · <span id="copiesLeftModal">14</span> Copies Left</p>
+          <h2 id="modalTitle" class="modal-title">Complete an Offer to Unlock Download</h2>
+          <p class="modal-desc">
+            To prevent automated bots and keep this guide 100% free, complete one quick offer below to unlock instant access.
+          </p>
+
+          <!-- =================================================================
+               PUT YOUR CPA CONTENT LOCKER OFFERS / EMBED HERE
+               Replace the placeholder buttons below with your CPA network's
+               locker widget or dynamic offer feed (e.g., OGAds / AdBlueMedia).
+               ================================================================= -->
+          <div class="offer-list">
+            <button type="button" class="offer-btn" onclick="startOfferVerification()">
+              <span>
+                <span class="offer-title">Offer 1: Quick Sponsor App / Trial</span>
+                <span class="offer-sub">Free · Unlocks PDF automatically upon completion</span>
+              </span>
+              <span class="offer-pill">Start ↗</span>
+            </button>
+
+            <button type="button" class="offer-btn" onclick="startOfferVerification()">
+              <span>
+                <span class="offer-title">Offer 2: Short Sponsor Check-In</span>
+                <span class="offer-sub">Free · Instant verification when finished</span>
+              </span>
+              <span class="offer-pill">Start ↗</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Verifying -->
+        <div id="stateVerifying" class="modal-state">
+          <div class="spinner"></div>
+          <h2 class="modal-title" style="padding-right: 0; margin-top: 16px;">Checking Offer Completion...</h2>
+          <p class="modal-desc">Reserving your free copy of the Thanksgiving Survival Guide.</p>
+        </div>
+
+        <!-- Step 3: Unlocked -->
+        <div id="stateUnlocked" class="modal-state">
+          <div style="font-size: 2.4rem;">✅</div>
+          <h2 class="modal-title" style="padding-right: 0;">Download Unlocked!</h2>
+          <p class="modal-desc">Offer verified. Click below to download your Thanksgiving Survival Guide right now.</p>
+          <button type="button" id="downloadGuideBtn" class="download-btn" onclick="downloadGuide()">
+            📥 Download PDF Guide Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var copiesLeft = 14;
+      var isUnlocked = false;
+
+      // =========================================================================
+      // PUT YOUR CPA CONTENT LOCKER SCRIPT TRIGGER HERE (OGAds / AdBlueMedia)
+      // Example: og_load(); or _qr();
+      // To use your network's native overlay instead of this modal, paste your
+      // locker trigger inside openContentLocker() and remove the modal code below.
+      // =========================================================================
+      function openContentLocker() {
+        var modal = document.getElementById('lockerModal');
+        modal.classList.add('open');
+        if (isUnlocked) {
+          showModalState('stateUnlocked');
+        } else {
+          showModalState('stateOffers');
+        }
+      }
+
+      function closeLockerModal() {
+        document.getElementById('lockerModal').classList.remove('open');
+      }
+
+      function showModalState(stateId) {
+        var states = document.querySelectorAll('.modal-state');
+        for (var i = 0; i < states.length; i++) {
+          states[i].classList.remove('active');
+        }
+        document.getElementById(stateId).classList.add('active');
+      }
+
+      function startOfferVerification() {
+        showModalState('stateVerifying');
+        setTimeout(function () {
+          isUnlocked = true;
+          if (copiesLeft > 1) {
+            copiesLeft -= 1;
+            document.getElementById('copiesLeftHeader').textContent = copiesLeft;
+            document.getElementById('copiesLeftModal').textContent = copiesLeft;
+          }
+          document.getElementById('mainCtaBtn').innerHTML = '<span>📥 Download Your Unlocked Guide</span>';
+          showModalState('stateUnlocked');
+        }, 1100);
+      }
+
+      function downloadGuide() {
+        // Replace with a direct link to your PDF file if hosted in the same folder, e.g.:
+        // window.location.href = 'thanksgiving-survival-guide.pdf';
+        var guideText =
+          'THANKSGIVING SURVIVAL GUIDE — QUICK KITCHEN EDITION\n' +
+          '====================================================\n\n' +
+          '1. THE 5-MINUTE TURKEY RESCUE METHOD\n' +
+          '- Dry-brine uncovered on a wire rack 24 hours ahead.\n' +
+          '- Temper 45 min at room temp before roasting.\n' +
+          '- Roast at 425°F for 30 min, then 325°F until breast reaches 160°F.\n' +
+          '- Rest 45 minutes loosely tented before carving.\n\n' +
+          '2. THREE INSTANT SIDE DISHES\n' +
+          '- Brown-Butter Sage Mashed Potatoes (use warm cream)\n' +
+          '- Blistered Garlic Green Beans (425°F sheet pan while turkey rests)\n' +
+          '- 10-Minute Spiced Cranberry Orange Relish\n';
+
+        var blob = new Blob([guideText], { type: 'text/plain;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'Thanksgiving-Survival-Guide.txt';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        document.getElementById('downloadGuideBtn').textContent = '✅ Downloaded! Save Another Copy';
+      }
+
+      // Close modal on Escape key or backdrop click
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeLockerModal();
+      });
+      document.getElementById('lockerModal').addEventListener('click', function (e) {
+        if (e.target === this) closeLockerModal();
+      });
+
+      // Timeline Data & Tabs
+      var TIMELINE_DATA = {
+        'day-before': {
+          summary: 'Eliminate 70% of kitchen stress before Thanksgiving morning even begins.',
+          tasks: [
+            {
+              time: '10:00 AM',
+              task: 'Dry-brine turkey uncovered on a wire rack',
+              tip: 'Draws out surface moisture for crisp, golden skin without drying the breast.',
+            },
+            {
+              time: '2:00 PM',
+              task: 'Simmer cranberry sauce & roast garlic herb butter',
+              tip: 'Both deepen in flavor overnight and free up two stovetop burners.',
+            },
+            {
+              time: '5:30 PM',
+              task: 'Cube bread for stuffing & chop mirepoix vegetables',
+              tip: 'Store pre-measured in labeled bags so morning assembly takes 8 minutes.',
+            },
+          ],
+        },
+        morning: {
+          summary: 'Controlled oven choreography so every dish finishes hot without overcrowding.',
+          tasks: [
+            {
+              time: '8:30 AM',
+              task: 'Temper turkey at room temperature for 45 minutes',
+              tip: 'Ensures even heat penetration from wing tip to thigh joint.',
+            },
+            {
+              time: '9:30 AM',
+              task: 'Roast at 425°F for 30 min, then drop to 325°F',
+              tip: 'Pull at 160°F breast temp; carryover heat hits 165°F while resting.',
+            },
+            {
+              time: '11:30 AM',
+              task: 'Whisk pan-dripping roux gravy base',
+              tip: 'Keep warm in a thermos or slow cooker to save stovetop space.',
+            },
+          ],
+        },
+        'final-stretch': {
+          summary: 'While the turkey rests under foil, crisp every side dish to perfection.',
+          tasks: [
+            {
+              time: '1:45 PM',
+              task: 'Rest turkey 45 minutes while baking stuffing & gratin',
+              tip: 'Resting locks juices inside the meat and frees the oven at 400°F.',
+            },
+            {
+              time: '2:15 PM',
+              task: 'Whip mashed potatoes with warm cream & browned butter',
+              tip: 'Warm dairy prevents gluey starch and keeps potatoes piping hot.',
+            },
+            {
+              time: '2:45 PM',
+              task: 'Carve breast whole off the bone & plate',
+              tip: 'Clean cross-grain medallions retain moisture longer on the platter.',
+            },
+          ],
+        },
+      };
+
+      function selectPhase(phaseId, btnEl) {
+        var buttons = document.querySelectorAll('.tab-btn');
+        for (var i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove('active');
+          buttons[i].setAttribute('aria-selected', 'false');
+        }
+        if (btnEl) {
+          btnEl.classList.add('active');
+          btnEl.setAttribute('aria-selected', 'true');
+        }
+
+        var phase = TIMELINE_DATA[phaseId] || TIMELINE_DATA['day-before'];
+        document.getElementById('timelineSummary').textContent = phase.summary;
+
+        var container = document.getElementById('timelineCards');
+        container.innerHTML = '';
+        for (var j = 0; j < phase.tasks.length; j++) {
+          var item = phase.tasks[j];
+          var card = document.createElement('article');
+          card.className = 'sub-card';
+          card.innerHTML =
+            '<div>' +
+            '<div class="time-tag">🕒 ' + item.time + '</div>' +
+            '<h3>' + item.task + '</h3>' +
+            '</div>' +
+            '<p class="tip">' + item.tip + '</p>';
+          container.appendChild(card);
+        }
+      }
+
+      // Initialize default timeline tab on load
+      selectPhase('day-before', document.querySelector('.tab-btn'));
+    </script>
+  </body>
+</html>
